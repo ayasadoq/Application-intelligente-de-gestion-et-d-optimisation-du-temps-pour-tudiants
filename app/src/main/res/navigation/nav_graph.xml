@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_taches">
+
+    <fragment
+        android:id="@+id/navigation_taches"
+        android:name="com.etudiant.timemaster.ui.fragments.TachesFragment"
+        android:label="Mes Tâches"
+        tools:layout="@layout/fragment_taches" />
+
+    <fragment
+        android:id="@+id/navigation_planning"
+        android:name="com.etudiant.timemaster.ui.fragments.PlanningFragment"
+        android:label="Planning"
+        tools:layout="@layout/fragment_planning" />
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.etudiant.timemaster.ui.fragments.StatsFragment"
+        android:label="Statistiques"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/navigation_pomodoro"
+        android:name="com.etudiant.timemaster.ui.fragments.PomodoroFragment"
+        android:label="Pomodoro"
+        tools:layout="@layout/fragment_pomodoro" />
+
+    <fragment
+        android:id="@+id/navigation_social"
+        android:name="com.etudiant.timemaster.ui.fragments.SocialFragment"
+        android:label="Social"
+        tools:layout="@layout/fragment_social" />
+</navigation>

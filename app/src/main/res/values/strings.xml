@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimeMaster</string>
+    <string-array name="priorites">
+        <item>1 - Basse</item>
+        <item>2 - Moyenne</item>
+        <item>3 - Haute</item>
+    </string-array>
+</resources>
