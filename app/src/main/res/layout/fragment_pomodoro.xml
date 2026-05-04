@@ -3,81 +3,85 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/tvPomodoroStatus"
+        android:id="@+id/tv_pomodoro_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Focus Session"
-        android:textSize="24sp"
+        android:text="@string/focus_session"
+        android:textSize="14sp"
+        android:letterSpacing="0.2"
         android:textStyle="bold"
-        android:textColor="@color/primary"
+        android:textColor="?attr/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/tvFocusScore"
+        android:id="@+id/tv_focus_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Focus Score: 100%"
-        android:textColor="@color/secondary"
+        android:textColor="?attr/colorOnSurfaceVariant"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tvPomodoroStatus"
+        app:layout_constraintTop_toBottomOf="@id/tv_pomodoro_status"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
-        android:id="@+id/pomodoroProgress"
+        android:id="@+id/pomodoro_progress"
         android:layout_width="280dp"
         android:layout_height="280dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         app:indicatorSize="280dp"
-        app:trackThickness="16dp"
-        app:indicatorColor="@color/secondary"
-        app:trackColor="@color/gray_light"
+        app:trackThickness="12dp"
+        app:indicatorColor="?attr/colorPrimary"
+        app:trackColor="?attr/colorSurfaceVariant"
+        app:trackCornerRadius="10dp"
         android:progress="100"
-        app:layout_constraintTop_toBottomOf="@id/tvPomodoroStatus"
+        app:layout_constraintTop_toBottomOf="@id/tv_focus_score"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/tvTimer"
+        android:id="@+id/tv_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="25:00"
         android:textSize="64sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/pomodoroProgress"
-        app:layout_constraintBottom_toBottomOf="@id/pomodoroProgress"
-        app:layout_constraintStart_toStartOf="@id/pomodoroProgress"
-        app:layout_constraintEnd_toEndOf="@id/pomodoroProgress" />
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintTop_toTopOf="@id/pomodoro_progress"
+        app:layout_constraintBottom_toBottomOf="@id/pomodoro_progress"
+        app:layout_constraintStart_toStartOf="@id/pomodoro_progress"
+        app:layout_constraintEnd_toEndOf="@id/pomodoro_progress" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/pomodoroProgress"
+        app:layout_constraintTop_toBottomOf="@id/pomodoro_progress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnStartStop"
-            style="@style/Widget.Material3.Button.Icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Start"
+            android:id="@+id/btn_start_stop"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="140dp"
+            android:layout_height="56dp"
+            android:text="@string/start"
             android:layout_marginEnd="16dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnReset"
+            android:id="@+id/btn_reset"
             style="@style/Widget.Material3.Button.TonalButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset" />
+            android:layout_width="140dp"
+            android:layout_height="56dp"
+            android:text="@string/reset" />
 
     </LinearLayout>
 

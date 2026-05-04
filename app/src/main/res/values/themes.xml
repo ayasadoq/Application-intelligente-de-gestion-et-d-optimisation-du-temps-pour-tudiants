@@ -1,34 +1,86 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme. (Startup Style) -->
     <style name="Theme.TimeMaster" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorOnPrimary">@color/onPrimary</item>
-        <item name="colorPrimaryContainer">@color/primaryContainer</item>
-        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+        <item name="colorPrimary">#6366F1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#6366F1</item>
+        <item name="colorOnPrimaryContainer">#FFFFFF</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondary</item>
-        <item name="colorOnSecondary">@color/onSecondary</item>
-        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/onSecondaryContainer</item>
+        <item name="colorSecondary">#8B5CF6</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorTertiary">#D946EF</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+
 
         <!-- Background and surface colors. -->
-        <item name="android:windowBackground">@color/background</item>
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorOnSurface">@color/onSurface</item>
-        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
-        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
+        <item name="android:windowBackground">#F8FAFC</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#0F172A</item>
+        <item name="colorSurfaceVariant">#F1F5F9</item>
+        <item name="colorOnSurfaceVariant">#64748B</item>
+        <item name="colorOutline">#E2E8F0</item>
 
-        <!-- Status bar and navigation bar. -->
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:navigationBarColor">@color/background</item>
+        <!-- Feedback colors. -->
+        <item name="colorError">#EF4444</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSuccess">#22C55E</item>
+        <item name="colorOnSuccess">#FFFFFF</item>
+        <item name="colorWarning">#F59E0B</item>
+        <item name="colorOnWarning">#FFFFFF</item>
     </style>
 
-    <style name="Widget.TimeMaster.CardView" parent="Widget.Material3.CardView.Elevated">
+    <style name="CalendarTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="android:windowBackground">?attr/colorSurface</item>
+        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
+        <item name="android:textColorSecondary">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- Legacy Styles for compatibility -->
+    <style name="Widget.TimeMaster.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.SmallComponent</item>
+    </style>
+
+    <style name="Widget.TimeMaster.Button.Secondary" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">?attr/colorSurfaceVariant</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Widget.TimeMaster.Card.Glass" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
         <item name="cardCornerRadius">16dp</item>
-        <item name="cardElevation">4dp</item>
-        <item name="strokeWidth">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Widget.TimeMaster.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <attr name="colorSuccess" format="color" />
+    <attr name="colorOnSuccess" format="color" />
+    <attr name="colorWarning" format="color" />
+    <attr name="colorOnWarning" format="color" />
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="GanttTaskText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

@@ -1,26 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme for Dark Mode. -->
+    <!-- Base application theme for Dark Mode. (Startup Style) -->
     <style name="Theme.TimeMaster" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#D7E3F8</item>
-        <item name="colorOnPrimary">#001B3E</item>
-        <item name="colorPrimaryContainer">#1E3A5F</item>
-        <item name="colorOnPrimaryContainer">#D7E3F8</item>
+        <item name="colorPrimary">@color/accent_indigo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/accent_indigo</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#FFDDB3</item>
-        <item name="colorOnSecondary">#291800</item>
+        <item name="colorSecondary">#8B5CF6</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorTertiary">#D946EF</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
 
         <!-- Background and surface colors. -->
-        <item name="android:windowBackground">#191C1E</item>
-        <item name="colorSurface">#191C1E</item>
-        <item name="colorOnSurface">#E2E2E6</item>
-        <item name="colorSurfaceVariant">#44474E</item>
-        <item name="colorOnSurfaceVariant">#C4C6D0</item>
+        <item name="android:windowBackground">#050508</item>
+        <item name="colorSurface">#0F172A</item>
+        <item name="colorOnSurface">#F8FAFC</item>
+        <item name="colorSurfaceVariant">#1E293B</item>
+        <item name="colorOnSurfaceVariant">#94A3B8</item>
+        <item name="colorOutline">#334155</item>
+
+        <!-- Feedback colors. -->
+        <item name="colorError">#EF4444</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSuccess">#22C55E</item>
+        <item name="colorOnSuccess">#050508</item>
+        <item name="colorWarning">#F59E0B</item>
+        <item name="colorOnWarning">#050508</item>
 
         <!-- Status bar and navigation bar. -->
-        <item name="android:statusBarColor">#191C1E</item>
+        <item name="android:statusBarColor">#050508</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="android:navigationBarColor">#191C1E</item>
+        <item name="android:navigationBarColor">#050508</item>
     </style>
 </resources>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">StudyFlow AI</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="guest_access">Guest Access (Demo)</string>
+    <string name="terms_accept">By continuing, you accept our terms</string>
+    <string name="login_failed">Login failed</string>
+    <string name="auth_error">Authentication error</string>
+
+    <string name="level_label">LEVEL %1$d</string>
+    <string name="xp_label">%1$d / %2$d XP</string>
+    <string name="focus_score_label">Focus Score: %1$d%%</string>
+    <string name="missions_title">Daily Missions</string>
+    <string-array name="priorites">
+        <item>1 - Low</item>
+        <item>2 - Medium</item>
+        <item>3 - High</item>
+    </string-array>
+    <string name="hero_subtitle">Optimize your time, boost your productivity, and achieve your goals with AI.</string>
+    <string name="hello_student">Hello, Student</string>
+    <string name="register_title">CREATE AN ACCOUNT</string>
+    <string name="register_btn">Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="stats_title">ANALYTICS</string>
+    <string name="stats_subtitle">Optimizing your productivity</string>
+    <string name="achievements_title">BADGES AND TROPHIES</string>
+    <string name="focus_session">FOCUS SESSION</string>
+    <string name="start">START</string>
+    <string name="reset">RESET</string>
+    <string name="strategy_of_day">STRATEGY OF THE DAY</string>
+    <string name="mission_config">MISSION CONFIGURATION</string>
+    <string name="mission_name_hint">Mission Name</string>
+    <string name="mission_description_hint">Briefing (Description)</string>
+    <string name="tactical_settings">TACTICAL SETTINGS</string>
+    <string name="deadline">DEADLINE</string>
+    <string name="duration_hint">Duration (min)</string>
+    <string name="priority">PRIORITY</string>
+    <string name="priority_low">LOW</string>
+    <string name="priority_medium">MEDIUM</string>
+    <string name="priority_high">HIGH</string>
+    <string name="deploy_mission">DEPLOY MISSION</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="overdue_tasks">Overdue</string>
+    <string name="smart_planner">Smart Planner</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="ai_coach_title">AI Productivity Coach</string>
+    <string name="ai_insight_loading">Analyzing your productivity…</string>
+    <string name="focus_and_planning">Focus &amp; Planning</string>
+</resources>

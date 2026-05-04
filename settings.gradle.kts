@@ -23,5 +23,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TimeMaster"
+rootProject.name = "StudyFlow AI"
 include(":app")

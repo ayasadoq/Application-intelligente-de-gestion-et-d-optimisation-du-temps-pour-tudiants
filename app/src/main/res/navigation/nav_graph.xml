@@ -3,35 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/navigation_taches">
+    app:startDestination="@id/navigation_dashboard">
 
     <fragment
-        android:id="@+id/navigation_taches"
-        android:name="com.etudiant.timemaster.ui.fragments.TachesFragment"
-        android:label="Mes Tâches"
-        tools:layout="@layout/fragment_taches" />
+        android:id="@+id/navigation_dashboard"
+        android:name="com.studyflowai.ui.fragments.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_planning"
-        android:name="com.etudiant.timemaster.ui.fragments.PlanningFragment"
-        android:label="Planning"
+        android:id="@+id/navigation_planner"
+        android:name="com.studyflowai.ui.fragments.PlanningFragment"
+        android:label="Smart Planner"
         tools:layout="@layout/fragment_planning" />
 
     <fragment
-        android:id="@+id/navigation_stats"
-        android:name="com.etudiant.timemaster.ui.fragments.StatsFragment"
-        android:label="Statistiques"
-        tools:layout="@layout/fragment_stats" />
+        android:id="@+id/navigation_tasks"
+        android:name="com.studyflowai.ui.fragments.TasksFragment"
+        android:label="Tasks"
+        tools:layout="@layout/fragment_task_list" />
 
     <fragment
-        android:id="@+id/navigation_pomodoro"
-        android:name="com.etudiant.timemaster.ui.fragments.PomodoroFragment"
-        android:label="Pomodoro"
+        android:id="@+id/navigation_focus"
+        android:name="com.studyflowai.ui.fragments.PomodoroFragment"
+        android:label="Focus Session"
         tools:layout="@layout/fragment_pomodoro" />
 
     <fragment
-        android:id="@+id/navigation_social"
-        android:name="com.etudiant.timemaster.ui.fragments.SocialFragment"
-        android:label="Social"
-        tools:layout="@layout/fragment_social" />
+        android:id="@+id/navigation_analytics"
+        android:name="com.studyflowai.ui.fragments.StatsFragment"
+        android:label="Analytics"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.studyflowai.ui.fragments.ChatFragment"
+        android:label="Coach AI"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_full_gantt"
+        android:name="com.studyflowai.ui.fragments.FullGanttFragment"
+        android:label="Itinéraire Complet"
+        tools:layout="@layout/fragment_full_gantt" />
 </navigation>

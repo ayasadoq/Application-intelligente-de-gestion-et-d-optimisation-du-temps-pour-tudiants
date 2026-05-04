@@ -1,16 +1,26 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
-    // alias(libs.plugins.google.services) // Commented out until google-services.json is added
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.etudiant.timemaster"
+    namespace = "com.studyflowai"
     compileSdk = 34
 
+    val localProperties = Properties()
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.inputStream().use { 
+            localProperties.load(it) 
+        }
+    }
+
     defaultConfig {
-        applicationId = "com.etudiant.timemaster"
+        applicationId = "com.studyflowai"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -37,6 +47,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -72,10 +83,21 @@ dependencies {
     // Lottie Animations
     implementation(libs.lottie)
 
-    // Firebase (Social feature)
+    // Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.auth.ktx)
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.android.gms:play-services-auth:21.0.0")
+
+    // BYOK AI & Security
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    // Retrofit for stable AI Bridge
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

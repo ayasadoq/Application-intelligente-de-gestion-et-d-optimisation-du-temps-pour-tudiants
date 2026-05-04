@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fond de base Ultra Noir -->
+    <item>
+        <shape>
+            <solid android:color="#020308" />
+        </shape>
+    </item>
+
+    <!-- Halo Vibrant Indigo en haut à droite -->
+    <item>
+        <shape>
+            <gradient
+                android:type="radial"
+                android:gradientRadius="800dp"
+                android:centerX="90%"
+                android:centerY="10%"
+                android:startColor="#406366F1"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+
+    <!-- Halo Vibrant Cyan en bas à gauche -->
+    <item>
+        <shape>
+            <gradient
+                android:type="radial"
+                android:gradientRadius="900dp"
+                android:centerX="10%"
+                android:centerY="90%"
+                android:startColor="#4044BCFF"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+
+    <!-- Halo Magenta central pour la profondeur -->
+    <item>
+        <shape>
+            <gradient
+                android:type="radial"
+                android:gradientRadius="700dp"
+                android:centerX="50%"
+                android:centerY="40%"
+                android:startColor="#26FF44EC"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

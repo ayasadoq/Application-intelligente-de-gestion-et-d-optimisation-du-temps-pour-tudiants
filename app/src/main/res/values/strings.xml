@@ -1,8 +1,59 @@
 <resources>
-    <string name="app_name">TimeMaster</string>
+    <string name="app_name">StudyFlow</string>
+    <string name="continue_with_google">Continuer avec Google</string>
+    <string name="guest_access">Accès Invité (Démo)</string>
+    <string name="terms_accept">En continuant, vous acceptez nos conditions</string>
+    <string name="login_failed">Connexion échouée</string>
+    <string name="auth_error">Erreur d\'authentification</string>
+    <string name="select_language">Choisir la langue</string>
+    <string name="cancel">Annuler</string>
+    <string name="social_hq">SOCIAL HQ</string>
+    <string name="join_unit">REJOINDRE UNE UNITÉ</string>
+    <string name="session_code_hint">Code de session (ex: FOCUS24)</string>
+    <string name="deploy">DÉPLOYER</string>
+    <string name="active_agents">AGENTS ACTIFS</string>
+
+    <string name="level_label">NIVEAU %1$d</string>
+    <string name="xp_label">%1$d / %2$d XP</string>
+    <string name="focus_score_label">Focus Score: %1$d%%</string>
+    <string name="missions_title">Missions du Jour</string>
     <string-array name="priorites">
         <item>1 - Basse</item>
         <item>2 - Moyenne</item>
         <item>3 - Haute</item>
     </string-array>
+    <string name="hero_subtitle">Optimisez votre temps, boostez votre productivité et atteignez vos objectifs.</string>
+    <string name="hello_student">Bonjour, %1$s ! 👋</string>
+    <string name="tasks_remaining">%1$d missions restantes</string>
+    <string name="streak_days">Série : %1$d jours 🔥</string>
+    <string name="ai_default_insight">Prends une grande inspiration, on commence ?</string>
+    <string name="progress_percent_format">%1$d%%</string>
+    <string name="register_title">CRÉER UN COMPTE</string>
+    <string name="register_btn">S\'inscrire</string>
+    <string name="already_have_account">Déjà un compte ? Se connecter</string>
+    <string name="stats_title">ANALYSE</string>
+    <string name="stats_subtitle">Optimisation de ta productivité</string>
+    <string name="achievements_title">BADGES ET TROPHÉES</string>
+    <string name="focus_session">SESSION DE FOCUS</string>
+    <string name="start">START</string>
+    <string name="reset">RESET</string>
+    <string name="strategy_of_day">STRATÉGIE DU JOUR</string>
+    <string name="mission_config">CONFIGURATION DE MISSION</string>
+    <string name="mission_name_hint">Nom de la mission</string>
+    <string name="mission_description_hint">Briefing (Description)</string>
+    <string name="tactical_settings">PARAMÈTRES TACTIQUES</string>
+    <string name="deadline">ÉCHÉANCE</string>
+    <string name="duration_hint">Durée (min)</string>
+    <string name="priority">PRIORITÉ</string>
+    <string name="priority_low">BASSE</string>
+    <string name="priority_medium">MOYENNE</string>
+    <string name="priority_high">HAUTE</string>
+    <string name="deploy_mission">DÉPLOYER LA MISSION</string>
+    <string name="completed_tasks">Terminées</string>
+    <string name="overdue_tasks">En retard</string>
+    <string name="smart_planner">Smart Planner</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="ai_coach_title">Productivity Coach</string>
+    <string name="ai_insight_loading">Analyse de votre productivité...</string>
+    <string name="focus_and_planning">Focus &amp; Planning</string>
 </resources>

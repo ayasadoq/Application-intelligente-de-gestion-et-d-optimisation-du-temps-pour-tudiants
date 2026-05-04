@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">StudyFlow AI</string>
+    <string name="continue_with_google">المتابعة باستخدام Google</string>
+    <string name="guest_access">دخول زائر (عرض)</string>
+    <string name="terms_accept">بالمتابعة، فإنك توافق على شروطنا</string>
+    <string name="login_failed">فشل تسجيل الدخول</string>
+    <string name="auth_error">خطأ في المصادقة</string>
+    <string name="select_language">اختر اللغة</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="level_label">المستوى %1$d</string>
+    <string name="xp_label">%1$d / %2$d XP</string>
+    <string name="focus_score_label">درجة التركيز: %1$d%%</string>
+    <string name="missions_title">مهام اليوم</string>
+    <string-array name="priorites">
+        <item>1 - منخفضة</item>
+        <item>2 - متوسطة</item>
+        <item>3 - عالية</item>
+    </string-array>
+    <string name="hero_subtitle">حسّن وقتك، وعزز إنتاجيتك، وحقق أهدافك باستخدام الذكاء الاصطناعي.</string>
+    <string name="hello_student">مرحباً، أيها الطالب</string>
+    <string name="register_title">إنشاء حساب</string>
+    <string name="register_btn">تسجيل</string>
+    <string name="already_have_account">لديك حساب بالفعل؟ تسجيل الدخول</string>
+    <string name="stats_title">التحليلات</string>
+    <string name="stats_subtitle">تحسين إنتاجيتك</string>
+    <string name="achievements_title">الأوسمة والكؤوس</string>
+    <string name="focus_session">جلسة تركيز</string>
+    <string name="start">ابدأ</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="strategy_of_day">استراتيجية اليوم</string>
+    <string name="mission_config">تكوين المهمة</string>
+    <string name="mission_name_hint">اسم المهمة</string>
+    <string name="mission_description_hint">الإحاطة (الوصف)</string>
+    <string name="tactical_settings">الإعدادات التكتيكية</string>
+    <string name="deadline">الموعد النهائي</string>
+    <string name="duration_hint">المدة (دقيقة)</string>
+    <string name="priority">الأولوية</string>
+    <string name="priority_low">منخفضة</string>
+    <string name="priority_medium">متوسطة</string>
+    <string name="priority_high">عالية</string>
+    <string name="deploy_mission">نشر المهمة</string>
+    <string name="completed_tasks">المكتملة</string>
+    <string name="overdue_tasks">المتأخرة</string>
+    <string name="smart_planner">المخطط الذكي</string>
+    <string name="focus_mode">وضع التركيز</string>
+    <string name="ai_coach_title">مدرب الإنتاجية بالذكاء الاصطناعي</string>
+    <string name="ai_insight_loading">جاري تحليل إنتاجيتك…</string>
+    <string name="focus_and_planning">التركيز والتخطيط</string>
+    <string name="social_hq">المقر الاجتماعي</string>
+    <string name="join_unit">انضم إلى وحدة</string>
+    <string name="session_code_hint">رمز الجلسة (مثال: FOCUS24)</string>
+    <string name="deploy">نشر</string>
+    <string name="active_agents">العملاء النشطون</string>
+</resources>
